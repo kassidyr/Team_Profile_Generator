@@ -1,0 +1,35 @@
+header {
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    display: block;
+    justify-content: center;
+}
+
+.card {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px auto;
+    max-width: 1000px;
+}
+
+.border {
+    border: black 5px solid;
+}
+
+.card-header {
+    background-color: royalblue;
+    color: white;
+    font-size: 24px;
+}

@@ -1,7 +1,7 @@
 const createManager = function (manager) {
     return `
-    <div>
-        <div>
+    <div class="border">
+        <div class="card-header">
             <h3>${manager.getName()}</h3>
             <h4>Manager</h4>
         </div>
@@ -17,13 +17,13 @@ const createManager = function (manager) {
 
 const createEngineer = function (engineer) {
     return `
-    <div>
-        <div>
+    <div class="border">
+        <div class="card-header">
             <h3>${engineer.getName()}</h3>
             <h4>Engineer</h4>
         </div>
 
-        <div>
+        <div class="card-body">
             <p>ID: ${engineer.getID()}</p>
             <p>Email: ${engineer.getEmail()}</p>
             <p>Github: ${engineer.getGitHub()}</p>
@@ -35,8 +35,8 @@ const createEngineer = function (engineer) {
 
 const createIntern = function (intern) {
     return `
-    <div>
-        <div>
+    <div class="border">
+        <div class="card-header">
             <h3>${intern.getName()}</h3>
             <h4>Intern</h4>
         </div>
@@ -76,8 +76,8 @@ const createTeamPage = function(team) {
                 </nav>
             </header>
             <main>
-                <div>
-                    <div>
+                <div class="card-deck">
+                    <div class="card">
                     ${organizeTeam(team)}
                     </div>
                 </div>
